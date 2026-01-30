@@ -21,6 +21,18 @@ export interface Experience {
   technologies: string[];
 }
 
+export interface Certificate {
+  id: number;
+  title: string;
+  issuer: string;
+  date: string;
+  description: string;
+  credentialId: string;
+  link: string;
+  color: string;
+  previewImage?: string;
+}
+
 export interface ChatMessage {
   role: 'user' | 'model';
   text: string;

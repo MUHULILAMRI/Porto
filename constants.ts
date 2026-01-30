@@ -1,16 +1,18 @@
 
-import { Project, Experience } from './types';
+import { Project, Experience, Certificate } from './types';
 
 export const USER_INFO = {
   name: "MUH. ULIL AMRI, S.Kom",
+  // ... (rest of USER_INFO)
   role: "Fullstack Developer & Data Analyst",
   shortBio: "I bridge the gap between complex data and intuitive user experiences. Specializing in modern web technologies and actionable data insights.",
   location: "Indonesia",
-  email: "ulil.amri@example.com", // Placeholder
-  profileImage: "./profile.jpg", // Simpan foto Anda sebagai 'profile.jpg' di folder root
+  email: "muhulila648@gmail.com",
+  profileImage: "./ulil.jpeg", // Foto profil
   socials: {
-    github: "github.com/ulilamri",
-    linkedin: "linkedin.com/in/ulilamri"
+    github: "github.com/MUHULILAMRI",
+    linkedin: "linkedin.com/in/muh-ulil-amri-s-kom-mtcna-34832038b/",
+    instagram: "instagram.com/muhulilamri_____"
   }
 };
 
@@ -50,42 +52,105 @@ export const SKILL_DATA = [
   { subject: 'AI Integration', A: 75, fullMark: 100 },
 ];
 
-export const CERTIFICATES_DATA = [
+export const CERTIFICATES_DATA: Certificate[] = [
   {
     id: 1,
-    title: "Google Data Analytics Professional Certificate",
-    issuer: "Google",
-    date: "2023",
-    credentialId: "G-DA-2023-XYZ",
-    link: "#",
-    color: "blue"
+    title: "Junior Network Administrator (BNSP)",
+    issuer: "BNSP / LSP Teknologi Digital",
+    date: "2024",
+    description: "Sertifikasi kompetensi nasional untuk pengelolaan infrastruktur jaringan, konfigurasi perangkat, dan pemecahan masalah jaringan komputer.",
+    credentialId: "BNSP-JNA-2024",
+    link: "./sertifikat/JNA.jpg",
+    color: "indigo",
+    previewImage: "./sertifikat/JNA.jpg"
   },
   {
     id: 2,
-    title: "AWS Certified Solutions Architect – Associate",
-    issuer: "Amazon Web Services",
-    date: "2022",
-    credentialId: "AWS-SCA-9981",
-    link: "#",
-    color: "orange"
+    title: "Data Management Staff (BNSP)",
+    issuer: "BNSP / LSP Teknologi Digital",
+    date: "2021",
+    description: "Sertifikasi profesional dalam pengelolaan aset data organisasi, administrasi database, dan pemrosesan informasi secara efisien.",
+    credentialId: "BNSP-DMS-2021",
+    link: "./sertifikat/DMS.jpg",
+    color: "violet",
+    previewImage: "./sertifikat/DMS.jpg"
   },
   {
     id: 3,
-    title: "Meta Front-End Developer Professional Certificate",
-    issuer: "Meta",
-    date: "2022",
-    credentialId: "META-FE-7721",
-    link: "#",
-    color: "indigo"
+    title: "MikroTik Certified Network Associate",
+    issuer: "MikroTik",
+    date: "2024",
+    description: "Sertifikasi internasional MikroTik (MTCNA) yang memvalidasi keahlian dalam konfigurasi, manajemen, dan troubleshooting perangkat router MikroTik.",
+    credentialId: "MTCNA-24-ULIL",
+    link: "./sertifikat/mtcna.png",
+    color: "blue",
+    previewImage: "./sertifikat/mtcna.png"
   },
   {
     id: 4,
-    title: "Deep Learning Specialization",
-    issuer: "Coursera / DeepLearning.AI",
+    title: "AI Engineer For Milenial",
+    issuer: "Milenial AI Academy",
+    date: "2024",
+    description: "Program intensif yang berfokus pada pengembangan aplikasi berbasis kecerdasan buatan, integrasi model bahasa besar (LLM), dan teknik engineering AI modern.",
+    credentialId: "CERT-AI-2024",
+    link: "./sertifikat/AI Engineer.png",
+    color: "cyan",
+    previewImage: "./sertifikat/AI Engineer.png"
+  },
+  {
+    id: 5,
+    title: "Mastering Generative AI",
+    issuer: "Kominfo x Milenial AI",
+    date: "2024",
+    description: "Pelatihan lanjutan Mastering Generative Artificial Intelligence sebagai bagian dari program peningkatan bakat digital.",
+    credentialId: "GEN-AI-MASTER-2024",
+    link: "./sertifikat/Mastering Generative AI.png",
+    color: "violet",
+    previewImage: "./sertifikat/Mastering Generative AI.png"
+  },
+  {
+    id: 6,
+    title: "Cyber Security Dasar",
+    issuer: "ID-Networkers (LMS)",
+    date: "2023",
+    description: "Pelatihan fundamental keamanan siber yang mencakup perlindungan data, manajemen risiko digital, dan dasar-dasar pertahanan jaringan.",
+    credentialId: "CYBER-SEC-BAS-IDN",
+    link: "./sertifikat/Cyber Security.png",
+    color: "orange",
+    previewImage: "./sertifikat/Cyber Security.png"
+  },
+  {
+    id: 7,
+    title: "Introduction To Cloud Computing",
+    issuer: "Digital Talent Scholarship",
+    date: "2023",
+    description: "Dasar-dasar teknologi cloud, model layanan (IaaS, PaaS, SaaS), dan pengenalan infrastruktur cloud global.",
+    credentialId: "CLOUD-INTRO-DTS-2023",
+    link: "./sertifikat/Introducing To Cloud Computing.png",
+    color: "blue",
+    previewImage: "./sertifikat/Introducing To Cloud Computing.png"
+  },
+  {
+    id: 8,
+    title: "Dasar-dasar Keamanan AI",
+    issuer: "Kominfo",
+    date: "2024",
+    description: "Mempelajari etika, risiko keamanan, dan teknik perlindungan data dalam pengembangan sistem kecerdasan buatan.",
+    credentialId: "SEC-AI-DTS-2024",
+    link: "./sertifikat/Keamana AI.png",
+    color: "indigo",
+    previewImage: "./sertifikat/Keamana AI.png"
+  },
+  {
+    id: 9,
+    title: "Data Management Staff (Pelatihan)",
+    issuer: "Vocational School Graduate Academy (VSGA)",
     date: "2021",
-    credentialId: "DL-AI-5512",
-    link: "#",
-    color: "violet"
+    description: "Pelatihan teknis pengelolaan data bagi lulusan vokasi yang diselenggarakan oleh Kominfo di Kabupaten Bantaeng.",
+    credentialId: "VSGA-DMS-2021",
+    link: "./sertifikat/SERTIFIKAT. kominfo.jpg",
+    color: "blue",
+    previewImage: "./sertifikat/SERTIFIKAT. kominfo.jpg"
   }
 ];
 
@@ -154,23 +219,27 @@ export const PROJECTS: Project[] = [
 ];
 
 export const SYSTEM_INSTRUCTION = `
-You are a helpful AI assistant for a portfolio website belonging to ${USER_INFO.name}.
-He is a ${USER_INFO.role}.
-Key Traits: Professional, Analytical, Creative.
-Skills: React, TypeScript, Python, SQL, Data Visualization, Machine Learning.
-Goal: Answer questions about Ulil's experience, skills, and projects based on the context of a senior engineer and data analyst.
-Keep answers concise, professional, yet friendly. If asked about contact info, provide ${USER_INFO.email}.
+Anda adalah asisten AI yang ramah dan profesional untuk website portofolio milik ${USER_INFO.name}.
+Dia adalah seorang ${USER_INFO.role}.
 
-Here is the detailed list of projects available in the portfolio. When a user asks about a specific project, use this data to provide a concise summary including the tech stack:
+Instruksi Utama:
+1. GUNAKAN BAHASA INDONESIA dalam setiap percakapan secara default.
+2. Kepribadian: Profesional, Analitis, Kreatif, namun tetap santai dan bersahabat.
+3. Keahlian: React, TypeScript, Python, SQL, Visualisasi Data, Machine Learning, Cyber Security.
+4. Tujuan: Menjawab pertanyaan tentang pengalaman, skill, proyek, dan sertifikasi Ulil berdasarkan konteks sebagai senior engineer dan analis data.
+5. Jawablah dengan ringkas dan jelas. Jika ditanya tentang info kontak, berikan email: ${USER_INFO.email}.
 
+Daftar Proyek yang tersedia:
 ${PROJECTS.map(p => `
-- Title: "${p.title}"
-  Category: ${p.category}
+- Judul: "${p.title}"
+  Kategori: ${p.category}
   Status: ${p.status || 'N/A'}
-  Description: ${p.description}
-  Tech Stack: ${p.techStack.join(', ')}
-  Links: ${p.link ? 'Live Demo' : ''} ${p.githubLink ? 'GitHub Code' : ''}
+  Deskripsi: ${p.description}
+  Teknologi: ${p.techStack.join(', ')}
 `).join('\n')}
 
-If a user asks about a project not listed here, strictly state that you only have information on the featured projects shown in the portfolio.
+Sertifikasi yang dimiliki:
+${CERTIFICATES_DATA.map(c => `- ${c.title} oleh ${c.issuer} (${c.date}): ${c.description}`).join('\n')}
+
+Jika pengguna bertanya tentang hal yang tidak ada di daftar ini, sampaikan dengan sopan bahwa Anda hanya memiliki informasi untuk data yang ditampilkan di portofolio saat ini.
 `;
