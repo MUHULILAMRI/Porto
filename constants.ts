@@ -184,6 +184,17 @@ export const CERTIFICATES_DATA: Certificate[] = [
     link: "./sertifikat/Next Js, Docker, Advance API Architectures.png",
     color: "indigo",
     previewImage: "./sertifikat/Next Js, Docker, Advance API Architectures.png"
+  },
+  {
+    id: 13,
+    title: "Data Scientist Project Based Internship",
+    issuer: "Rakamin Academy",
+    date: "2024",
+    description: "Program magang berbasis proyek yang fokus pada analisis data mendalam, pemodelan statistik, dan penyelesaian masalah bisnis menggunakan pendekatan Data Science.",
+    credentialId: "RAKAMIN-DS-2024",
+    link: "./sertifikat/Data Scientist Project Based Internship Program.png",
+    color: "violet",
+    previewImage: "./sertifikat/Data Scientist Project Based Internship Program.png"
   }
 ];
 
