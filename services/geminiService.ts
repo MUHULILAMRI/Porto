@@ -23,7 +23,7 @@ export const sendMessageToGemini = async (message: string): Promise<string> => {
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-2.0-flash-exp', // Menggunakan model terbaru
+      model: 'gemini-3-flash-preview',
       contents: [{ role: 'user', parts: [{ text: message }] }],
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
