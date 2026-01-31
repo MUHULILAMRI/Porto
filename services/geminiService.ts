@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import { GoogleGenAI } from "@google/genai";
 import { SYSTEM_INSTRUCTION } from "../constants";
 
@@ -5,8 +6,9 @@ let client: GoogleGenAI | null = null;
 
 const getClient = () => {
   if (!client) {
-    if (process.env.API_KEY) {
-      client = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+    if (apiKey) {
+      client = new GoogleGenAI({ apiKey });
     }
   }
   return client;
