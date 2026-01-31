@@ -44,7 +44,7 @@ const AIChat: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              Tanya <span className="text-cyan-400">Mesin</span>
+              Tanya <span className="text-cyan-400">AI ULIL</span>
             </h2>
             <p className="text-slate-400">
               Agen AI interaktif yang dilatih dengan riwayat profesional saya.
@@ -77,8 +77,8 @@ const AIChat: React.FC = () => {
                   )}
 
                   <div className={`max-w-[80%] p-3 rounded lg:text-base ${msg.role === 'user'
-                      ? 'bg-slate-800 text-slate-200 border border-slate-700'
-                      : 'text-cyan-50'
+                    ? 'bg-slate-800 text-slate-200 border border-slate-700'
+                    : 'text-cyan-50'
                     }`}>
                     {msg.role === 'model' ? (
                       <div className="whitespace-pre-wrap">
