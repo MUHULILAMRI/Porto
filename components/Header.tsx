@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code2 } from 'lucide-react';
+import { Menu, X, Monitor } from 'lucide-react';
 import { SectionId } from '../types';
 
 const Header: React.FC = () => {
@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      
+
       // Simple scroll spy logic
       const sections = Object.values(SectionId);
       for (const section of sections) {
@@ -46,17 +46,16 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-slate-900/80 backdrop-blur-md border-b border-white/5 py-3' : 'bg-transparent py-5'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-slate-900/80 backdrop-blur-md border-b border-white/5 py-3' : 'bg-transparent py-5'
+        }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-2 font-bold text-xl tracking-tight text-white cursor-pointer" onClick={() => scrollToSection(SectionId.HOME)}>
           <div className="bg-gradient-to-br from-cyan-400 to-violet-500 p-2 rounded-lg">
-            <Code2 size={20} className="text-white" />
+            <Monitor size={20} className="text-white" />
           </div>
-          <span>ULIL<span className="text-cyan-400">.DEV</span></span>
+          <span>Porto<span className="text-cyan-400">folio</span></span>
         </div>
 
         {/* Desktop Nav */}
@@ -65,14 +64,13 @@ const Header: React.FC = () => {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`text-sm font-medium uppercase tracking-wider transition-colors ${
-                activeSection === item.id ? 'text-cyan-400' : 'text-slate-300 hover:text-white'
-              }`}
+              className={`text-sm font-medium uppercase tracking-wider transition-colors ${activeSection === item.id ? 'text-cyan-400' : 'text-slate-300 hover:text-white'
+                }`}
             >
               {item.label}
             </button>
           ))}
-          <button 
+          <button
             onClick={() => scrollToSection(SectionId.CONTACT)}
             className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-5 py-2 rounded-full font-semibold text-sm transition-all hover:scale-105 hover:border-cyan-500/50"
           >
@@ -81,7 +79,7 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden text-white p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
@@ -101,7 +99,7 @@ const Header: React.FC = () => {
               {item.label}
             </button>
           ))}
-          <button 
+          <button
             onClick={() => scrollToSection(SectionId.CONTACT)}
             className="bg-gradient-to-r from-cyan-500 to-violet-500 text-white py-3 rounded-lg font-bold mt-2"
           >

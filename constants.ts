@@ -151,8 +151,42 @@ export const CERTIFICATES_DATA: Certificate[] = [
     link: "./sertifikat/SERTIFIKAT. kominfo.jpg",
     color: "blue",
     previewImage: "./sertifikat/SERTIFIKAT. kominfo.jpg"
+  },
+  {
+    id: 10,
+    title: "Fundamental Javascript",
+    issuer: "Dicoding Indonesia",
+    date: "2023",
+    description: "Memahami konsep dasar JavaScript, sintaksis, logika pemrograman, dan penggunaan fitur modern ES6+.",
+    credentialId: "DICODING-JS-2023",
+    link: "./sertifikat/Fundamental Javascript.png",
+    color: "orange",
+    previewImage: "./sertifikat/Fundamental Javascript.png"
+  },
+  {
+    id: 11,
+    title: "Mikrotik Networking",
+    issuer: "MikroTik Academy",
+    date: "2024",
+    description: "Pelatihan teknis mengenai infrastruktur jaringan menggunakan perangkat MikroTik, manajemen bandwidth, dan firewall.",
+    credentialId: "MIKRO-NET-2024",
+    link: "./sertifikat/Mikrotik Networking.png",
+    color: "blue",
+    previewImage: "./sertifikat/Mikrotik Networking.png"
+  },
+  {
+    id: 12,
+    title: "Next Js, Docker, Advance API Architectures",
+    issuer: "Fullstack Academy",
+    date: "2024",
+    description: "Pengembangan aplikasi web modern dengan Next.js, implementasi kontainerisasi Docker, dan perancangan arsitektur API yang skalabel.",
+    credentialId: "ADV-WEB-ARCH-2024",
+    link: "./sertifikat/Next Js, Docker, Advance API Architectures.png",
+    color: "indigo",
+    previewImage: "./sertifikat/Next Js, Docker, Advance API Architectures.png"
   }
 ];
+
 
 export const PROJECTS: Project[] = [
   {
