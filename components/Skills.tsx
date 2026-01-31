@@ -82,44 +82,46 @@ const Skills: React.FC = () => {
 
               <h3 className="text-center text-slate-300 font-mono text-sm uppercase tracking-widest mb-4 relative z-10">Radar Keseimbangan Skill</h3>
 
-              <ResponsiveContainer width="100%" height="90%" minHeight={300}>
-                <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData}>
-                  <PolarGrid stroke="#334155" strokeDasharray="3 3" />
-                  <PolarAngleAxis
-                    dataKey="subject"
-                    tick={{ fill: '#e2e8f0', fontSize: 11, fontWeight: 600 }}
-                  />
-                  <PolarRadiusAxis angle={30} domain={[0, 100]} tick={false} axisLine={false} />
-                  <Radar
-                    name="Proficiency"
-                    dataKey="A"
-                    stroke="#8b5cf6"
-                    strokeWidth={3}
-                    fill="#8b5cf6"
-                    fillOpacity={0.2}
-                    isAnimationActive={true}
-                    animationDuration={1500}
-                    animationEasing="ease-out"
-                  />
-                  <Radar
-                    name="Full Mark"
-                    dataKey="fullMark"
-                    stroke="transparent"
-                    fill="transparent"
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      backgroundColor: 'rgba(15, 23, 42, 0.95)',
-                      borderColor: 'rgba(139, 92, 246, 0.3)',
-                      color: '#f8fafc',
-                      borderRadius: '8px',
-                      backdropFilter: 'blur(4px)'
-                    }}
-                    itemStyle={{ color: '#a78bfa' }}
-                    formatter={(value) => [`${value}%`, 'Proficiency']}
-                  />
-                </RadarChart>
-              </ResponsiveContainer>
+              {isVisible && (
+                <ResponsiveContainer width="100%" height="90%" minHeight={300}>
+                  <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData}>
+                    <PolarGrid stroke="#334155" strokeDasharray="3 3" />
+                    <PolarAngleAxis
+                      dataKey="subject"
+                      tick={{ fill: '#e2e8f0', fontSize: 11, fontWeight: 600 }}
+                    />
+                    <PolarRadiusAxis angle={30} domain={[0, 100]} tick={false} axisLine={false} />
+                    <Radar
+                      name="Proficiency"
+                      dataKey="A"
+                      stroke="#8b5cf6"
+                      strokeWidth={3}
+                      fill="#8b5cf6"
+                      fillOpacity={0.2}
+                      isAnimationActive={true}
+                      animationDuration={1500}
+                      animationEasing="ease-out"
+                    />
+                    <Radar
+                      name="Full Mark"
+                      dataKey="fullMark"
+                      stroke="transparent"
+                      fill="transparent"
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: 'rgba(15, 23, 42, 0.95)',
+                        borderColor: 'rgba(139, 92, 246, 0.3)',
+                        color: '#f8fafc',
+                        borderRadius: '8px',
+                        backdropFilter: 'blur(4px)'
+                      }}
+                      itemStyle={{ color: '#a78bfa' }}
+                      formatter={(value) => [`${value}%`, 'Proficiency']}
+                    />
+                  </RadarChart>
+                </ResponsiveContainer>
+              )}
             </div>
           </div>
 
