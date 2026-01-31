@@ -8,7 +8,7 @@ export const USER_INFO = {
   shortBio: "I bridge the gap between complex data and intuitive user experiences. Specializing in modern web technologies and actionable data insights.",
   location: "Indonesia",
   email: "muhulila648@gmail.com",
-  profileImage: "./ulil.jpeg", // Foto profil
+  profileImage: "/ulil.jpeg", // Foto profil
   socials: {
     github: "github.com/MUHULILAMRI",
     linkedin: "linkedin.com/in/muh-ulil-amri-s-kom-mtcna-34832038b/",
@@ -60,9 +60,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2024",
     description: "Sertifikasi kompetensi nasional untuk pengelolaan infrastruktur jaringan, konfigurasi perangkat, dan pemecahan masalah jaringan komputer.",
     credentialId: "BNSP-JNA-2024",
-    link: "./sertifikat/JNA.jpg",
+    link: "/sertifikat/JNA.jpg",
     color: "indigo",
-    previewImage: "./sertifikat/JNA.jpg"
+    previewImage: "/sertifikat/JNA.jpg"
   },
   {
     id: 2,
@@ -71,9 +71,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2021",
     description: "Sertifikasi profesional dalam pengelolaan aset data organisasi, administrasi database, dan pemrosesan informasi secara efisien.",
     credentialId: "BNSP-DMS-2021",
-    link: "./sertifikat/DMS.jpg",
+    link: "/sertifikat/DMS.jpg",
     color: "violet",
-    previewImage: "./sertifikat/DMS.jpg"
+    previewImage: "/sertifikat/DMS.jpg"
   },
   {
     id: 3,
@@ -82,9 +82,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2024",
     description: "Sertifikasi internasional MikroTik (MTCNA) yang memvalidasi keahlian dalam konfigurasi, manajemen, dan troubleshooting perangkat router MikroTik.",
     credentialId: "MTCNA-24-ULIL",
-    link: "./sertifikat/mtcna.png",
+    link: "/sertifikat/mtcna.png",
     color: "blue",
-    previewImage: "./sertifikat/mtcna.png"
+    previewImage: "/sertifikat/mtcna.png"
   },
   {
     id: 4,
@@ -93,9 +93,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2024",
     description: "Program intensif yang berfokus pada pengembangan aplikasi berbasis kecerdasan buatan, integrasi model bahasa besar (LLM), dan teknik engineering AI modern.",
     credentialId: "CERT-AI-2024",
-    link: "./sertifikat/AI Engineer.png",
+    link: "/sertifikat/AI Engineer.png",
     color: "cyan",
-    previewImage: "./sertifikat/AI Engineer.png"
+    previewImage: "/sertifikat/AI Engineer.png"
   },
   {
     id: 5,
@@ -104,9 +104,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2024",
     description: "Pelatihan lanjutan Mastering Generative Artificial Intelligence sebagai bagian dari program peningkatan bakat digital.",
     credentialId: "GEN-AI-MASTER-2024",
-    link: "./sertifikat/Mastering Generative AI.png",
+    link: "/sertifikat/Mastering Generative AI.png",
     color: "violet",
-    previewImage: "./sertifikat/Mastering Generative AI.png"
+    previewImage: "/sertifikat/Mastering Generative AI.png"
   },
   {
     id: 6,
@@ -115,9 +115,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2023",
     description: "Pelatihan fundamental keamanan siber yang mencakup perlindungan data, manajemen risiko digital, dan dasar-dasar pertahanan jaringan.",
     credentialId: "CYBER-SEC-BAS-IDN",
-    link: "./sertifikat/Cyber Security.png",
+    link: "/sertifikat/Cyber Security.png",
     color: "orange",
-    previewImage: "./sertifikat/Cyber Security.png"
+    previewImage: "/sertifikat/Cyber Security.png"
   },
   {
     id: 7,
@@ -126,9 +126,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2023",
     description: "Dasar-dasar teknologi cloud, model layanan (IaaS, PaaS, SaaS), dan pengenalan infrastruktur cloud global.",
     credentialId: "CLOUD-INTRO-DTS-2023",
-    link: "./sertifikat/Introducing To Cloud Computing.png",
+    link: "/sertifikat/Introducing To Cloud Computing.png",
     color: "blue",
-    previewImage: "./sertifikat/Introducing To Cloud Computing.png"
+    previewImage: "/sertifikat/Introducing To Cloud Computing.png"
   },
   {
     id: 8,
@@ -137,9 +137,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2024",
     description: "Mempelajari etika, risiko keamanan, dan teknik perlindungan data dalam pengembangan sistem kecerdasan buatan.",
     credentialId: "SEC-AI-DTS-2024",
-    link: "./sertifikat/Keamana AI.png",
+    link: "/sertifikat/Keamana AI.png",
     color: "indigo",
-    previewImage: "./sertifikat/Keamana AI.png"
+    previewImage: "/sertifikat/Keamana AI.png"
   },
   {
     id: 9,
@@ -148,9 +148,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2021",
     description: "Pelatihan teknis pengelolaan data bagi lulusan vokasi yang diselenggarakan oleh Kominfo di Kabupaten Bantaeng.",
     credentialId: "VSGA-DMS-2021",
-    link: "./sertifikat/SERTIFIKAT. kominfo.jpg",
+    link: "/sertifikat/SERTIFIKAT. kominfo.jpg",
     color: "blue",
-    previewImage: "./sertifikat/SERTIFIKAT. kominfo.jpg"
+    previewImage: "/sertifikat/SERTIFIKAT. kominfo.jpg"
   },
   {
     id: 10,
@@ -159,9 +159,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2023",
     description: "Memahami konsep dasar JavaScript, sintaksis, logika pemrograman, dan penggunaan fitur modern ES6+.",
     credentialId: "DICODING-JS-2023",
-    link: "./sertifikat/Fundamental Javascript.png",
+    link: "/sertifikat/Fundamental Javascript.png",
     color: "orange",
-    previewImage: "./sertifikat/Fundamental Javascript.png"
+    previewImage: "/sertifikat/Fundamental Javascript.png"
   },
   {
     id: 11,
@@ -170,9 +170,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2024",
     description: "Pelatihan teknis mengenai infrastruktur jaringan menggunakan perangkat MikroTik, manajemen bandwidth, dan firewall.",
     credentialId: "MIKRO-NET-2024",
-    link: "./sertifikat/Mikrotik Networking.png",
+    link: "/sertifikat/Mikrotik Networking.png",
     color: "blue",
-    previewImage: "./sertifikat/Mikrotik Networking.png"
+    previewImage: "/sertifikat/Mikrotik Networking.png"
   },
   {
     id: 12,
@@ -181,9 +181,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2024",
     description: "Pengembangan aplikasi web modern dengan Next.js, implementasi kontainerisasi Docker, dan perancangan arsitektur API yang skalabel.",
     credentialId: "ADV-WEB-ARCH-2024",
-    link: "./sertifikat/Next Js, Docker, Advance API Architectures.png",
+    link: "/sertifikat/Next Js, Docker, Advance API Architectures.png",
     color: "indigo",
-    previewImage: "./sertifikat/Next Js, Docker, Advance API Architectures.png"
+    previewImage: "/sertifikat/Next Js, Docker, Advance API Architectures.png"
   },
   {
     id: 13,
@@ -192,9 +192,9 @@ export const CERTIFICATES_DATA: Certificate[] = [
     date: "2024",
     description: "Program magang berbasis proyek yang fokus pada analisis data mendalam, pemodelan statistik, dan penyelesaian masalah bisnis menggunakan pendekatan Data Science.",
     credentialId: "RAKAMIN-DS-2024",
-    link: "./sertifikat/Data Scientist Project Based Internship Program.png",
+    link: "/sertifikat/Data Scientist Project Based Internship Program.png",
     color: "violet",
-    previewImage: "./sertifikat/Data Scientist Project Based Internship Program.png"
+    previewImage: "/sertifikat/Data Scientist Project Based Internship Program.png"
   }
 ];
 
