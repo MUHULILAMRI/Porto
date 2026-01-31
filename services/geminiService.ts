@@ -16,28 +16,27 @@ export const sendMessageToGemini = async (message: string): Promise<string> => {
   const ai = getClient();
 
   if (!ai) {
-    return "I'm sorry, my brain (API Key) is currently missing. Please contact Ulil directly via email!";
+    return "Maaf, 'otak' saya (API Key) belum terpasang. Harap hubungi Ulil langsung melalui email!";
   }
 
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
+      model: 'gemini-2.0-flash-exp', // Menggunakan model terbaru
       contents: [{ role: 'user', parts: [{ text: message }] }],
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
       },
     });
 
-    return response.text || "I processed that but couldn't generate a text response.";
+    return response.text || "Saya sudah memprosesnya, tetapi tidak dapat menghasilkan tanggapan teks.";
   } catch (error: any) {
     console.error("Gemini Error Details:", error);
-    // Extract internal error message if possible
-    const errorMsg = error.response?.data?.error?.message || error.message || "Unknown error";
+    const errorMsg = error.response?.data?.error?.message || error.message || "Kesalahan tidak diketahui";
 
     if (errorMsg.includes("429") || errorMsg.includes("quota")) {
-      return "Rate limit reached. The free tier for the AI has exceeded its current quota. Please wait a moment or try again later!";
+      return "Batas kuota tercapai. Layanan AI gratis telah melampaui batas penggunaan saat ini. Harap tunggu sebentar atau coba lagi nanti!";
     }
 
-    return `Error: ${errorMsg}`;
+    return `Kesalahan: ${errorMsg}`;
   }
 };

@@ -5,7 +5,7 @@ import { ChatMessage, SectionId } from '../types';
 
 const AIChat: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: "System initialized. I am Ulil's digital portfolio assistant. Accessing database... Ready. \n\nAsk me about my projects, stack, or experience." }
+    { role: 'model', text: "Sistem diinisialisasi. Saya adalah asisten digital portofolio Ulil. Mengakses database... Siap. \n\nTanyakan apa saja tentang proyek, keahlian, atau pengalaman saya." }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -32,7 +32,7 @@ const AIChat: React.FC = () => {
       const responseText = await sendMessageToGemini(userMessage);
       setMessages(prev => [...prev, { role: 'model', text: responseText }]);
     } catch (error) {
-      setMessages(prev => [...prev, { role: 'model', text: "Connection error: Unable to reach neural network.", isError: true }]);
+      setMessages(prev => [...prev, { role: 'model', text: "Kesalahan koneksi: Tidak dapat menjangkau jaringan saraf.", isError: true }]);
     } finally {
       setIsLoading(false);
     }
@@ -44,10 +44,10 @@ const AIChat: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              Talk to the <span className="text-cyan-400">Machine</span>
+              Tanya <span className="text-cyan-400">Mesin</span>
             </h2>
             <p className="text-slate-400">
-              Interactive AI agent trained on my professional history.
+              Agen AI interaktif yang dilatih dengan riwayat profesional saya.
             </p>
           </div>
 
@@ -75,17 +75,16 @@ const AIChat: React.FC = () => {
                       <Bot size={16} className="text-cyan-400" />
                     </div>
                   )}
-                  
-                  <div className={`max-w-[80%] p-3 rounded lg:text-base ${
-                    msg.role === 'user' 
-                      ? 'bg-slate-800 text-slate-200 border border-slate-700' 
+
+                  <div className={`max-w-[80%] p-3 rounded lg:text-base ${msg.role === 'user'
+                      ? 'bg-slate-800 text-slate-200 border border-slate-700'
                       : 'text-cyan-50'
-                  }`}>
+                    }`}>
                     {msg.role === 'model' ? (
-                       <div className="whitespace-pre-wrap">
-                          <span className="text-cyan-500 mr-2">{'>'}</span>
-                          {msg.text}
-                       </div>
+                      <div className="whitespace-pre-wrap">
+                        <span className="text-cyan-500 mr-2">{'>'}</span>
+                        {msg.text}
+                      </div>
                     ) : (
                       msg.text
                     )}
@@ -98,18 +97,18 @@ const AIChat: React.FC = () => {
                   )}
                 </div>
               ))}
-              
+
               {isLoading && (
                 <div className="flex gap-4">
                   <div className="w-8 h-8 rounded bg-cyan-900/30 border border-cyan-500/30 flex items-center justify-center flex-shrink-0 mt-1">
                     <Bot size={16} className="text-cyan-400" />
                   </div>
                   <div className="flex items-center gap-2 p-3 rounded bg-slate-800/50 border border-slate-700/50">
-                      <Loader2 size={14} className="animate-spin text-cyan-400" />
-                      <span className="text-xs font-mono text-slate-400">
-                        typing<span className="animate-pulse">...</span>
-                      </span>
-                   </div>
+                    <Loader2 size={14} className="animate-spin text-cyan-400" />
+                    <span className="text-xs font-mono text-slate-400">
+                      sedang mengetik<span className="animate-pulse">...</span>
+                    </span>
+                  </div>
                 </div>
               )}
               <div ref={messagesEndRef} />
@@ -123,7 +122,7 @@ const AIChat: React.FC = () => {
                   type="text"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  placeholder="Type a command or question..."
+                  placeholder="Ketik perintah atau pertanyaan..."
                   className="flex-1 bg-transparent border-none text-slate-200 focus:ring-0 placeholder-slate-600 font-mono"
                   disabled={isLoading}
                   autoFocus
