@@ -8,8 +8,8 @@ const Skills: React.FC = () => {
   const categories = [
     { icon: <Layout size={20} />, title: 'Frontend', skills: 'React, Next.js, Tailwind, TypeScript', color: 'text-cyan-400', border: 'border-cyan-500/20' },
     { icon: <Server size={20} />, title: 'Backend', skills: 'Node.js, Express, Python (FastAPI)', color: 'text-green-400', border: 'border-green-500/20' },
-    { icon: <Database size={20} />, title: 'Data Analysis', skills: 'SQL, Pandas, NumPy, Tableau', color: 'text-violet-400', border: 'border-violet-500/20' },
-    { icon: <BrainCircuit size={20} />, title: 'AI Integration', skills: 'Gemini API, OpenAI, LangChain', color: 'text-pink-400', border: 'border-pink-500/20' },
+    { icon: <Database size={20} />, title: 'Analisis Data', skills: 'SQL, Pandas, NumPy, Tableau', color: 'text-violet-400', border: 'border-violet-500/20' },
+    { icon: <BrainCircuit size={20} />, title: 'Integrasi AI', skills: 'Gemini API, OpenAI, LangChain', color: 'text-pink-400', border: 'border-pink-500/20' },
   ];
 
   const [isVisible, setIsVisible] = useState(false);
@@ -54,11 +54,11 @@ const Skills: React.FC = () => {
           <div className="w-full lg:w-1/2 space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-5xl font-bold text-white">
-                Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">Proficiency</span>
+                Keahlian <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">Teknis</span>
               </h2>
               <p className="text-slate-400 leading-relaxed text-lg">
-                I don't just write code; I architect solutions. My skillset spans the entire development lifecycle,
-                from raw data processing to pixel-perfect user interfaces.
+                Saya tidak hanya menulis kode; saya merancang solusi. Keahlian saya mencakup seluruh siklus pengembangan,
+                mulai dari pemrosesan data mentah hingga antarmuka pengguna yang sempurna.
               </p>
             </div>
 
@@ -80,7 +80,7 @@ const Skills: React.FC = () => {
               {/* Decorative background in chart */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-violet-500/5 z-0" />
 
-              <h3 className="text-center text-slate-300 font-mono text-sm uppercase tracking-widest mb-4 relative z-10">Skill Balance Radar</h3>
+              <h3 className="text-center text-slate-300 font-mono text-sm uppercase tracking-widest mb-4 relative z-10">Radar Keseimbangan Skill</h3>
 
               <ResponsiveContainer width="100%" height="90%" minHeight={300}>
                 <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData}>

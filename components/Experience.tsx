@@ -9,9 +9,9 @@ const Experience: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-            Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">Journey</span>
+            Perjalanan <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">Profesional</span>
           </h2>
-          <p className="text-slate-400">My career timeline and key milestones.</p>
+          <p className="text-slate-400">Timeline karier dan pencapaian utama saya.</p>
         </div>
 
         <div className="max-w-3xl mx-auto relative">
@@ -21,7 +21,7 @@ const Experience: React.FC = () => {
           <div className="space-y-12">
             {EXPERIENCE_DATA.map((job, index) => (
               <div key={job.id} className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group`}>
-                
+
                 {/* Timeline Dot */}
                 <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-slate-900 border-2 border-cyan-500 z-10 group-hover:scale-125 group-hover:bg-cyan-500 transition-all duration-300 shadow-[0_0_10px_rgba(6,182,212,0.5)]"></div>
 

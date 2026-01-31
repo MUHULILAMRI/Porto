@@ -37,12 +37,12 @@ const Header: React.FC = () => {
   };
 
   const navItems = [
-    { label: 'Home', id: SectionId.HOME },
-    { label: 'Experience', id: SectionId.EXPERIENCE },
-    { label: 'Expertise', id: SectionId.SKILLS },
-    { label: 'Projects', id: SectionId.PROJECTS },
-    { label: 'Certificates', id: SectionId.CERTIFICATES },
-    { label: 'Ask AI', id: SectionId.AI_CHAT },
+    { label: 'Beranda', id: SectionId.HOME },
+    { label: 'Pengalaman', id: SectionId.EXPERIENCE },
+    { label: 'Keahlian', id: SectionId.SKILLS },
+    { label: 'Proyek', id: SectionId.PROJECTS },
+    { label: 'Sertifikat', id: SectionId.CERTIFICATES },
+    { label: 'Tanya AI', id: SectionId.AI_CHAT },
   ];
 
   return (
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
             onClick={() => scrollToSection(SectionId.CONTACT)}
             className="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-5 py-2 rounded-full font-semibold text-sm transition-all hover:scale-105 hover:border-cyan-500/50"
           >
-            Contact Me
+            Hubungi Saya
           </button>
         </nav>
 
@@ -103,7 +103,7 @@ const Header: React.FC = () => {
             onClick={() => scrollToSection(SectionId.CONTACT)}
             className="bg-gradient-to-r from-cyan-500 to-violet-500 text-white py-3 rounded-lg font-bold mt-2"
           >
-            Contact Me
+            Hubungi Saya
           </button>
         </div>
       )}
